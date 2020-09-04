@@ -6,6 +6,7 @@ $input.addEventListener('input', function() {
   $output.innerHTML=$input.value;
 
 })*/
+const $form = docum
 const $firstname = document.getElemementById('#fname');
 const $lastname = document.getElemementById('#lname');
 const $emailadress = document.getElemementById('#email');
