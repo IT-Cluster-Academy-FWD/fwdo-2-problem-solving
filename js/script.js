@@ -50,3 +50,24 @@ $clear.addEventListener("click", function () {
 
   checkDisabled();
 });
+
+
+const $searchButton = document.getElementById('search-button');
+const $searchInput = document.getElementById('search-input');
+
+$searchButton.addEventListener('click', function () {
+  $searchInput.classList.toggle('active');
+});
+
+$searchInput.addEventListener('input', function () {
+  const $links = document.querySelectorAll(`.${LIST_ITEM_LINK_CLASS}`)
+  const word = $searchInput.value;
+
+  for (const $link of $links) {
+    if ($link.innerText.toLowerCase().startsWith(word)) {
+      $link.parentElement.style.display = "flex";
+    } else {
+      $link.parentElement.style.display = "none";
+    }
+  }
+});
