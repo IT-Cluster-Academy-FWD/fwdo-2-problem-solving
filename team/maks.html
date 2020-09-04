@@ -9,13 +9,17 @@
 </head>
 <body>
 
-  <div class="w3-container">
-    <label for="my-input">What do you want to say?</label>
-    <input type="text" id="my-input" class="w3-input w3-border w3-round">
-  
-    <div id="my-output"></div>
-  </div>
-  
+  <form id="form">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname-input" name="fname" placeholder="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname-input" name="lname" placeholder="Doe"><br>
+    <label for="email">Email</label><br>
+    <input type="email" id="email-input" name="lname" placeholder="exampel@.com"><br><br>
+    <button type="submit" id="button">Submit</button>
+  </form> 
+
+  <div></div>
 
   <script src="../js/maks.js"></script>
 </body>
