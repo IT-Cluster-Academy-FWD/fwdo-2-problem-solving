@@ -4,17 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Practice Lesson</title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/css/css_form.asp">
 </head>
 <body>
-  <form class="container">
+  <!--<form class="container">
     <input class="w3-input" type="text" id="my-input">
   </form>
   <div class="w3-output">
     <ul>
       <li id="my-output"></li>
     </ul>
-  </div>
+  </div>-->
+<form class="info">
+
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" required placeholder="Enter first name..."><br>
+
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" required placeholder="Enter last name..."><br>
+
+  <label for="email">Email address:</label><br>
+  <input type="email" id="email" name="email" required placeholder="Enter email address..."><br>
+  
+  <button type="submit" class="button">Save</button><br>
+</form>
 <script src="../js/olia.js"></script>
 </body>
 </html>
