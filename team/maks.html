@@ -3,23 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/lib/w3css/w3.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="../lib/w3css/w3.css">
+  <link rel="stylesheet" href="../css/maks.css">
   <title>Document</title>
 </head>
 <body>
 
-  <form id="form">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname-input" name="fname" placeholder="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname-input" name="lname" placeholder="Doe"><br>
-    <label for="email">Email</label><br>
-    <input type="email" id="email-input" name="lname" placeholder="exampel@.com"><br><br>
-    <button type="submit" id="button">Submit</button>
+  <form id="form" class="">
+    <label for="fname" class="w3-text-blue">First name:</label><br>
+    <input type="text" id="fname-input" class="user-info w3-input w3-border" name="fname" placeholder="John" required><br>
+    <label for="lname" class="w3-text-blue">Last name:</label><br>
+    <input type="text" id="lname-input" class="user-info w3-input w3-border" name="lname" placeholder="Doe" required><br>
+    <label for="email" class="w3-text-blue">Enter your email:</label><br>
+    <input type="email" id="email-input" class="user-info w3-input w3-border" name="email" placeholder="exampel@gmail.com" required><br><br>
+    <button type="submit" id="button" class="w3-btn w3-blue">Submit</button>
   </form> 
 
-  <div></div>
+  <div id="user-container" class="">
+  </div>
 
   <script src="../js/maks.js"></script>
 </body>
