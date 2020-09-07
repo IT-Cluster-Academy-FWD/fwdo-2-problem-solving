@@ -15,31 +15,25 @@ const $button = document.getElementById('button');
 
 
 
-// $button.addEventListener('click', function(event) {
-//    event.preventDefault();
-//    userValue();
-//    disableinput();
-// });
-$button.addEventListener('submit', function(event) {
+$button.addEventListener('click', function(event) {
    event.preventDefault();
-   userValue();
+   $userInfo.innerHTML = $userInfo.innerHTML + '<p>' + $firstNameInput.value + '</p>' ;
+   $userInfo.innerHTML = $userInfo.innerHTML + '<p>' + $lastName.value + '<p>';
+   $userInfo.innerHTML = $userInfo.innerHTML + '<p>' + $email.value + '</p>';
    disableinput();
 });
-
 
 function disableinput() {
    const $firstNameInput = document.getElementById('fname-input');
    const $lastName = document.getElementById('lname-input');
    const $email = document.getElementById('email-input');
+   const $button = document.getElementById('button');
 
    $firstNameInput.disabled = true;
    $lastName.disabled = true;
    $email.disabled = true;
+   $button.disabled = true;
 }
 
-function userValue(){
-   $userInfo.innerHTML = $userInfo.innerHTML + '<p>' + $firstNameInput.value + '</p>' ;
-   $userInfo.innerHTML = $userInfo.innerHTML + '<p>' + $lastName.value + '<p>';
-   $userInfo.innerHTML = $userInfo.innerHTML + '<p>' + $email.value + '</p>';   
-}
+
    
