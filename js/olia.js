@@ -6,11 +6,29 @@ $input.addEventListener('input', function() {
   $output.innerHTML=$input.value;
 
 })*/
-const $form = docum
-const $firstname = document.getElemementById('#fname');
-const $lastname = document.getElemementById('#lname');
-const $emailadress = document.getElemementById('#email');
+const $form = document.getElementById('info');
+const $firstname = document.getElementById('fname');
+const $lastname = document.getElementById('lname');
+const $emailaddress = document.getElementById('email');
+const $list = document.getElementById('result');
 
-$form.addEventListener ('submit', function (event) {
-  event.preventDefault();
-})
+
+
+$form.addEventListener('submit', function(event){
+    event.preventDefault();
+    $firstname.disabled = true;
+    $lastname.disabled = true;
+    $emailaddress.disabled = true;
+
+    var li_el = document.createElement('li');
+    li_el.innerText = $firstname.value;
+    $list.appendChild(li_el);
+        
+    var li_el = document.createElement('li');
+    li_el.innerText = $lastname.value;
+    $list.appendChild(li_el);
+            
+    var li_el = document.createElement('li');
+    li_el.innerText = $emailaddress.value;
+    $list.appendChild(li_el);
+});
